@@ -6,7 +6,7 @@ from app import create_app,db
 cli = FlaskGroup(create_app=create_app)
 manager = Manager(create_app)
 
-
+print("Hello World")
 manager.add_command('create_models', CreateUsersCommand)
 
 if __name__ == "__main__":
